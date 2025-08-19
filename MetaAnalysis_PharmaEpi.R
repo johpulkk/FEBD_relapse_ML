@@ -14,10 +14,6 @@ pacman::p_load(
 )
 
 
-## --- Paths & data ---
-# setwd("~/Reissut/Post_doc/Relapse_bipo")  # uncomment if needed
-rr <- read.table("meta_analysis_res_180825.csv", header = TRUE, sep = ",")
-
 ## --- Helper: run fixed-effect meta per exposure within one risk group ---
 fe_meta_by_exposure <- function(dat, group_value) {
   dat_g <- dat %>%
@@ -50,6 +46,15 @@ fe_meta_by_exposure <- function(dat, group_value) {
   
   res
 }
+
+# rr = Cox estimates from within-individual analyses per sample (stratified by the predicted risk).
+# Data has to contain:
+# TE = risk estimate (parameter estimate)
+# seTE = standard error
+# exp = medication name
+# stud = cohort name (fin or swe)
+# t1 = order to meta-analyse the medications
+# Machine_Learning_Prediction = predicted risk group ("High risk" or "Low risk") 
 
 ## --- Compute results for High and Low risk groups ---
 df_high <- fe_meta_by_exposure(rr, "High risk")
@@ -93,10 +98,10 @@ plot_meta <- function(df, ylim_pair = c(0.25, 3), colors = c("black")) {
 }
 
 ## --- Make the plots ---
-# High risk (your example used darkred and black — if only one level, one color is used)
+# High risk
 g_high <- plot_meta(df_high, ylim_pair = c(0.18, 9), colors = c("darkred"))
 print(g_high)
 
-# Low risk (your example used #56B4E9 and black)
+# Low risk 
 g_low  <- plot_meta(df_low,  ylim_pair = c(0.25, 3), colors = c("#56B4E9"))
 print(g_low)

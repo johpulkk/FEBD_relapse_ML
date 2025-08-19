@@ -14,6 +14,10 @@ pacman::p_load(dplyr, stringr, survival, survminer, ggplot2, intsurv)
 # Keep original dates
 study_end <- as.Date("2018-12-31")  # 2021-12-31 for the Swedish internal validation
 
+# tulopvm = date of bipolar relapse
+# kuolpv = date of death
+# ced = start date of follow-up
+
 fi <- fi_data2 %>%
   mutate(
     # times in days from cohort entry 'ced'

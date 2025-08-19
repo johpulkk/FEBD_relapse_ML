@@ -227,7 +227,7 @@ print(caret::confusionMatrix(ival_pred_label,
 
 ## ---- External validation on Finnish external validation sample ---- 
 
-# The similar approach was used for transdiagnostic validation
+# A similar approach was used for transdiagnostic validation
 
 fi_final <- dplyr::select(finland_df, dplyr::any_of(c(sel_feats, "outcome")))
 pred_fi  <- mlr::predict(final_model, newdata = fi_final)

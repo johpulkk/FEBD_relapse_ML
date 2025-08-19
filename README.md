@@ -1,5 +1,5 @@
 # FEBD_relapse_ML
-This repository provides the scripts to generate machine learning (ML) analyses to predict bipolar relapse in first-episode bipolar disorder (FEBD). 
+This repository provides the scripts to generate machine learning (ML) analyses to predict the risk of bipolar relapse in first-episode bipolar disorder (FEBD). 
 
 Dev_Val_Cal.R = XGBoost ML model development, internal & external validation, calibration, and decision curve analyses.
 Compare_ML_Algorithms.R = Comparison of XGBoost vs. other ML algorithms in predicting bipolar relapse. 

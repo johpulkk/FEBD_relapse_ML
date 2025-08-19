@@ -128,8 +128,7 @@ fairness_analysis <- function(immi_df, muut_df, labelA, labelB, nIter = 1000,
 }
 
 ## ================================
-## Example subgroup comparisons
-## (uncomment the ones you need)
+## Subgroup comparisons
 ## Assumes df_2y has: outcome, rel_mod_cal, edu_cat.1, Kon, population_group
 ## ================================
 

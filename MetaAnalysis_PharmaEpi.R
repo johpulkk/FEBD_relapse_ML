@@ -1,6 +1,6 @@
 ## ===========================
 ## Meta-analysis on pharmacoepidemiological
-## results, stratified by the risk prediction:
+## results, stratified by predicted relapse risk:
 ## Author: M.D., Ph.D., Johannes Lieslehto
 ## email: johannes.lieslehto@ki.se
 

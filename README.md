@@ -6,6 +6,7 @@
 
 ---
 
+## Check the Developed ML Model:
 <a href="https://johannes-lieslehto.shinyapps.io/biporacle/">
   <img src="docs/figures/logo.jpg" alt="BipOracle" width="200"/>
 </a>

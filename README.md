@@ -6,7 +6,9 @@
 
 ---
 
-[![BipOracle Shiny App](logo.jpg)](https://johannes-lieslehto.shinyapps.io/biporacle/)
+<a href="https://johannes-lieslehto.shinyapps.io/biporacle/">
+  <img src="logo.jpg" alt="BipOracle" width="200"/>
+</a>
 
 ## Overview
 This repository provides R scripts for machine learning analyses to predict the risk of bipolar relapse 

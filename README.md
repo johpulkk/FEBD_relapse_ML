@@ -7,7 +7,7 @@
 ---
 
 <a href="https://johannes-lieslehto.shinyapps.io/biporacle/">
-  <img src="logo.jpg" alt="BipOracle" width="200"/>
+  <img src="docs/figures/logo.jpg" alt="BipOracle" width="200"/>
 </a>
 
 ## Overview

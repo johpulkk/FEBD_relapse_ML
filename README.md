@@ -6,6 +6,8 @@
 
 ---
 
+[![BipOracle Shiny App](logo.jpg)](https://johannes-lieslehto.shinyapps.io/biporacle/)
+
 ## Overview
 This repository provides R scripts for machine learning analyses to predict the risk of bipolar relapse 
 in **first-episode bipolar disorder (FEBD)**.  

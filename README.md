@@ -14,6 +14,7 @@
 This repository provides R scripts for machine learning analyses to predict the risk of bipolar relapse 
 in **first-episode bipolar disorder (FEBD)**. The analyses are described in <a href="https://www.nature.com/articles/s41380-025-03316-2">Lieslehto et al., 2025</a>.
 
+
 The analyses include:
 - Development and validation of ML models
 - Comparison across algorithms

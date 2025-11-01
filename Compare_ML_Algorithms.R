@@ -74,7 +74,7 @@ rf_tw <- mlr::makeTuneWrapper(learner    = rf_lrn,
 
 # =============== Elastic Net (glmnet) ===============
 # cvglmnet does its own inner CV for lambda; we tune alpha and the "s" to use
-enet_base <- mlr::makeLearner("classif.cvglmnet", predict.type = "prob")
+enet_base <- mlr::makeLearner("classif.cvglmnet",id = "elastic", predict.type = "prob")
 # Preprocessing
 enet_lrn  <- mlr::makePreprocWrapperCaret(enet_base, ppc.knnImpute = TRUE, ppc.nzv = TRUE,
                                           ppc.zv = TRUE, ppc.center = TRUE, ppc.scale = TRUE)
@@ -82,7 +82,7 @@ enet_lrn  <- mlr::makeUndersampleWrapper(enet_lrn, usw.rate = us_rate)
 
 # Hyperparameter Space:
 enet_ps <- ParamHelpers::makeParamSet(
-  ParamHelpers::makeDiscreteParam("alpha", values = c(0, 0.2, 0.4, 0.6, 0.8, 1)),   
+  ParamHelpers::makeDiscreteParam("alpha", values = c(0, 0.2, 0.4,0.5, 0.6, 0.8, 1)),   
   ParamHelpers::makeDiscreteParam("s",     values = c(0, 0.2, 0.5, 0.8, 1, 2, 5, 10))
 )
 
